@@ -32,6 +32,8 @@ test('test3',async({page,browserName}) =>{
 
   // slow
   test('test6',async({page}) =>{
+    test.slow();
+    await page.goto('https://demoblaze.com/index.html')
     console.log('this is test6..');
-   await page.goto('https://demoblaze.com/index.html')
+
   })
